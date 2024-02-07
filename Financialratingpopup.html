@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaada</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="vendor_btn">
+      <a
+        class="vendor_btn vendor_maine_content"
+        data-toggle="modal"
+        data-target="#contactModal"
+      >
+        + Create Vendor Onboarding
+      </a>
+    </div>
+
+    <!-- Contact Modal -->
+    <div
+      class="modal vendor_modal hidemodal"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Financial Rating</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <p>
+                  Please rate your experience in each of the following areas:
+                </p>
+                <p style="margin-top: -20px">
+                  Drag the slider to a point on the scale.
+                </p>
+              </div>
+              <div
+                class="vendor_status_main_rating justify-content-between ms-auto"
+              >
+                <div class="row bs-wizard">
+                  <div class="col-xs-2 bs-wizard-step complete">
+                    <div class="progress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <a href="#" class="bs-wizard-rating"> </a>
+                    <div class="bs-wizard-info text-center">1-Poor</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">
+                      2-Below Average
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">3-Average</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">4-Good</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">5-Excellent</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Newvendor_category">
+                <label class="mb-1 text-dark"
+                  >Feedback/Remarks <span class="required">*</span></label
+                >
+                <input type="Username" class="form-control form_h_modal" />
+              </div>
+              <div class="approve-btn_reject_vendor_btm">
+                <button type="button" class="btn btn-light">Approve</button>
+                <button type="button" class="btn btn-light">Hold</button>
+                <button type="button" class="btn btn-light">Reject</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

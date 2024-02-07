@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaada</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    /> -->
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+            <a href="existing_vendors.html"
+              ><img src="images/logo.png" alt="" height="51""></a
+            >
+          </div>
+
+          <div class="col-md-3 ms-auto invites_log">
+            <div class="notification">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bell-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+                  />
+                </svg>
+
+                <div class="circle">3</div>
+              </a>
+
+              <div class="dropdown">
+                <div class="notifications dropdown-menu">
+                  <div class="notifications_heading justify-content-between">
+                    Notifications
+
+                    <span>4 New</span>
+                  </div>
+
+                  <div class="notifications_inside">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          >We are pleased to inform you that your submitted
+                          documents have been</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 30 Min Ago
+                        </div>
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          >We are pleased to inform you that your submitted
+                          documents have been</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 47 Min Ago
+                        </div>
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          >We are pleased to inform you that your submitted
+                          documents have been</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 1 Day Ago
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="user_box">
+              <img src="images/profile_pic.png" alt="" />
+
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Rahul Verma
+              </a>
+
+              <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="profile.html">Profile </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li>
+                    <a class="dropdown-item" href="account.html">Accounts</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 left_menu">
+            <ul>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Vendor</a></li>
+              <li><a href="#">RFQ</a></li>
+              <li><a href="#">Report</a></li>
+              <li><a href="#">Logout</a></li>
+              <!-- <li><a href="#">Accounts</a></li> -->
+            </ul>
+          </div>
+          <div class="col-md-10">
+            <div class="heading_search_outer">
+              <div class="main_heading d-flex justify-content-between">
+                <div class="heading_vendor_name">
+                  <h1>Factory Visit</h1>
+                </div>
+
+                <div class="vendor_status_main mt-4">
+                  <div class="row bs-wizard">
+                    <div class="col-xs-2 bs-wizard-step complete">
+                      <div class="progress">
+                        <div class="progress-bar "></div>
+                      </div>
+                      <a href="#" class="bs-wizard-dot">
+                        <img src="images/check.png" alt=""
+                      /></a>
+                      <div class="bs-wizard-info text-center">Profile</div>
+                    </div>
+
+
+
+                    <div class="col-xs-2 bs-wizard-step complete">
+                      <div class="progress">
+                        <div class="progress-bar "></div>
+                      </div>
+                      <a href="#" class="bs-wizard-dot">
+                        <img src="images/check.png" alt=""
+                      /></a>
+                      <div class="bs-wizard-info text-center">Financial</div>
+                    </div>
+
+
+
+
+                    <div class="col-xs-2 bs-wizard-step disabled">
+                      <!-- active -->
+
+                      <div class="progress">
+                        <div class="progress-bar bar_wt"></div>
+                      </div>
+                      <a href="#" class="bs-wizard-dot">3</a>
+                      <div class="bs-wizard-info text-center">
+                        Factory Visit
+                      </div>
+                    </div>
+
+                    <div class="col-xs-2 bs-wizard-step disabled">
+                      <!-- active -->
+
+                      <div class="progress">
+                        <div class="progress-bar "></div>
+                      </div>
+                      <a href="#" class="bs-wizard-dot">4</a>
+                      <div class="bs-wizard-info text-center">Final Rating</div>
+                    </div>
+
+                    <div class="col-xs-2 bs-wizard-step disabled">
+                      <!-- active -->
+
+                      <div class="progress">
+                        <div class="progress-bar"></div>
+                      </div>
+                      <a href="#" class="bs-wizard-dot">5</a>
+                      <div class="bs-wizard-info text-center">SAP Creation</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing_main factory_checklist">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="sortable">Checklist</th>
+                    <th>Document Number</th>
+                    <th>Files</th>
+                    <th>Status</th>
+                    <th>Remarks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+
+                    <td><b>Engineer Input</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td class="table_width">
+                      FACILITY AND ASSETS: MANUFACTURING FACILITIES/MACHINE
+                    </td>
+                    <td>1</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>SOURCE OF RAW MATERIAL</td>
+                    <td>3</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>TESTING FACILITIES AVAILABLE AT VENDOR WORKS</td>
+                    <td>3</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>MANUFACTURING CAPACITY</td>
+                    <td>1</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>PROCESS FLOW CHART</td>
+                    <td>2</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>CONTROL OF INTERNAL PROCESS</td>
+                    <td>1</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>COMMITMENT TO QUALITY</td>
+                    <td>3</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>ISO CERTIFICATION</td>
+                    <td>1</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>SUPPLY DEADLINES</td>
+                    <td>3</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>ORGANISATION CHART</td>
+                    <td>2</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>QUALITY POLICY</td>
+                    <td>2</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td></td>
+
+                    <td><b>QA Input</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>QUALITY ASSURANCE PLAN (QAP)</td>
+                    <td>1</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>
+                      SUPPLIES OF MODULE MOUNTING STRUCTURE IN LAST 5 YEARS TO
+                      SOLAR INDUSTRY ALONG WITH CUSTOMERS & QUANTITY
+                    </td>
+                    <td>1</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>
+                      PRODUCTS : LIST OF PRODUCTS RANGE ALONG WITH RAW MATERIAL
+                      GRADE.
+                    </td>
+                    <td>2</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>CUSTOMER COMPLAINTS IN LAST 5 YEARS</td>
+                    <td>3</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>
+                      PREVENTIVE ACTION FOR COMPLAINT RESOLUTION & ITS RESULT.
+                    </td>
+                    <td>3</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>CUSTOMER APPRECIATION LETTER (IF ANY)</td>
+                    <td>2</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>PACKING & MARKING</td>
+                    <td>3</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>PRESENT ORDER</td>
+                    <td>1</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>Product Range and Raw Material Grade</td>
+                    <td>3</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>Manufacturing Facilities/Machines</td>
+                    <td>2</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>Factory Images</td>
+                    <td>4</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>Validation of Provided Details</td>
+                    <td>1</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="checkbox" /></td>
+
+                    <td>Shop Floor Area</td>
+                    <td>2</td>
+                    <td>
+                      <img src="images/pdf.png" alt="" />
+                      <a href="#">file.pdf</a>
+                    </td>
+                    <td>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected="">Select</option>
+                        <option value="1">On Hold</option>
+                        <option value="2">Ok</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control form-h"
+                        value=""
+                        placeholder="(If required)"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="approve_button justify-content-end mt-3">
+              <a
+                href="#"
+                class="btn btn-success"
+                data-toggle="modal"
+        data-target="#contactModal"
+                >Approve</a
+              >
+
+              <a href="#" class="btn btn-warning">Hold</a>
+              <a href="#" class="btn btn-danger">Reject</a>
+            </div>
+
+            <div class="space"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="top_remove">2024 Avaada Group . All Rights Reserved.</footer>
+
+
+
+    <!-- Contact Modal -->
+    <div
+      class="modal vendor_modal hidemodal"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Factory Rating</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <p>
+                  Please rate your experience in each of the following areas:
+                </p>
+                <p style="margin-top: -20px">
+                  Drag the slider to a point on the scale.
+                </p>
+              </div>
+              <div
+                class="vendor_status_main_rating justify-content-between ms-auto"
+              >
+                <div class="row bs-wizard">
+                  <div class="col-xs-2 bs-wizard-step complete">
+                    <div class="progress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <a href="#" class="bs-wizard-rating"> </a>
+                    <div class="bs-wizard-info text-center">1-Poor</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">
+                      2-Below Average
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">3-Average</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">4-Good</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">5-Excellent</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Newvendor_category">
+                <label class="mb-1 text-dark"
+                  >Feedback/Remarks <span class="required">*</span></label
+                >
+                <input type="Username" class="form-control form_h_modal" />
+              </div>
+              <div class="approve_button justify-content-end mt-3">
+                <a
+                  href="#"
+                  
+                  >Approve</a
+                >
+  
+                <a href="#" class="btn btn-warning">Hold</a>
+                <a href="#" class="btn btn-danger">Reject</a>
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

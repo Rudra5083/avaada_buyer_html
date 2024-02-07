@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaada</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+            <a href="existing_vendors.html"
+              ><img src="images/logo.png" alt="" height="51""></a
+            >
+          </div>
+
+          <div class="col-md-5 ms-auto invites_log1">
+            <div class="invites"></div>
+
+            
+
+            <div class="notification">
+
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                 
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+              class="bi bi-bell-fill" viewBox="0 0 16 16">
+              <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+          </svg>
+
+          <div class="circle">3</div>
+
+                  
+                  </a>
+
+                      <div class="dropdown">
+                          
+                        
+
+
+                          <div class="notifications dropdown-menu">
+
+                              <div class="notifications_heading justify-content-between">
+                                  Notifications
+                          
+                                  <span>2 New</span>
+                          </div>
+                          
+                          
+                          
+                          <div class="notifications_inside">
+                          <ul>
+                          <li><a href="#">New vendor details submitted: Vendor Code VND205</a>
+                          <div class="time_outer"><img src="images/time.png" alt=""> 30 Min Ago	</div>
+                          </li>
+                          
+                          <li><a href="#">Vendor details received: Vendor Code VND203, Name - MechCorp Engineering.</a>
+                              <div class="time_outer"><img src="images/time.png" alt=""> 47 Min Ago	</div>
+                              </li>
+                          
+                            
+                          
+                          </ul>
+                          
+                          </div>
+                          
+                          
+                          </div>
+
+
+                         
+                        </div>
+
+</div>
+
+            <div class="user_box">
+              <img src="images/profile_pic.png" alt="" />
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Rahul Verma
+              </a>
+
+              <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile </a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 left_menu">
+            <ul>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Vendor</a></li>
+              <li><a href="#">RFQ</a></li>
+              <li><a href="#">Report</a></li>
+              <li><a href="#">Logout</a></li>
+              <!-- <li><a href="#">Accounts</a></li> -->
+            </ul>
+          </div>
+          <div class="col-md-10">
+            <div class="heading_search_outer">
+              <div class="main_heading d-flex justify-content-between">
+                <div class="heading_vendor_name">
+                  <h1>Vendors Details</h1>
+                </div>
+
+                <div class="date_download">
+                  <div class="latest_date">
+                    Latest Modification Date:<span> 04/12/2023</span>
+                  </div>
+
+                  <div class="download_btn">
+                    <a
+                      class="dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-download"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
+                        />
+                        <path
+                          d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
+                        />
+                      </svg>
+                      Download
+                    </a>
+
+                    <div class="dropdown">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-arrow-right-short"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                              />
+                            </svg>
+                            Download All
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-arrow-right-short"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                              />
+                            </svg>
+                            Donwload Manually</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="vendor_name_status">
+              <div class="vendor_name">
+                Vendor Name<br />
+
+                <span> Civil Construct Ltd.</span>
+              </div>
+
+              <div class="vendor_status_main justify-content-between ms-auto">
+                <div class="row bs-wizard">
+                  <div class="col-xs-2 bs-wizard-step complete">
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dot">
+                      <img src="images/check.png" alt=""
+                    /></a>
+                    <div class="bs-wizard-info text-center">Profile</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step complete">
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 45%"></div>
+                    </div>
+                    <a href="#" class="bs-wizard-dot">
+                      <img src="images/check.png" alt=""
+                    /></a>
+                    <div class="bs-wizard-info text-center">Financial</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dot">3</a>
+                    <div class="bs-wizard-info text-center">Factory Visit</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dot">4</a>
+                    <div class="bs-wizard-info text-center">Final Rating</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dot">5</a>
+                    <div class="bs-wizard-info text-center">Approval</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="business_financial_technical_tabs">
+              <div class="one_two_main">
+                <div class="one_div">
+                  <ul>
+                    <li>
+                      <a href="vendors_details_view_profile.html" class="active"
+                        >Business and Contact Information
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="financial-tax-operational-information-2.html"
+                        >Financial, Tax, and Operational Information</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="financial-tax-operational-information-2.html"
+                        >Technical, Compliance, and Quality Assurance
+                        Documentation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="approve_hold_reject">
+                  <div class="approve_button justify-content-end">
+                    <a
+                      href="#"
+                      class="btn btn-success"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      >Financial Approval</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-warning"
+                      data-toggle="modal"
+                      data-target="#contactModal"
+                      >Hold</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-danger"
+                      data-toggle="modal"
+                      data-target="#contactModalvendor"
+                      >Reject</a
+                    >
+                  </div>
+
+                  <div class="assigned_to justify-content-end">
+                    <label class="mb-1 text-dark">Assign To: </label>
+
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected="">Rahul</option>
+                      <option value="1">Abhishek</option>
+                      <option value="2">Satish</option>
+                      <option value="3">Pran</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="business_view_details">
+                <div class="white_box_2">
+                  <div class="card mb-3 card_change">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Category</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">Technology</div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Business Name</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">
+                          PowerGrid Electrical
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">PAN Card No</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">FDAPK0517A</div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">GSTIN No.</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">
+                          24AAACC1206D1ZM
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">GSTIN State</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">Delhi</div>
+                      </div>
+
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Email ID</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">
+                          arjun.sharma@gmail.com
+                        </div>
+                      </div>
+
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Mobile Number</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">
+                          +91 87654 32109
+                        </div>
+                      </div>
+
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">MSME Status</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">Yes, GH1235J</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="white_box_2">
+                  <div class="card mb-3 card_change">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Address</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">
+                          1005 | 10th Floor Arunachal Building, Connaught Lane,
+                          Barakhamba, New Delhi, Delhi 110001
+                        </div>
+                      </div>
+
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Organisation Chart</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">
+                          <img src="images/pdf.png" alt="" />
+                          <a href="#"> organisation_chart.pdf </a>
+                        </div>
+                      </div>
+
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Business Nature/Type</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">Partnership</div>
+                      </div>
+
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Quality Policy</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">
+                          <img src="images/pdf.png" alt="" />
+                          <a href="#"> quality_policy.pdf </a>
+                        </div>
+                      </div>
+
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Others</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">
+                          Award Winning Technology Support
+                        </div>
+                      </div>
+
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Vendor Registration Form</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">
+                          <img src="images/pdf.png" alt="" />
+                          <a href="#"> Vendor_Registration_Form.pdf </a>
+                        </div>
+                      </div>
+
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <h6 class="mb-0">Add Attachment</h6>
+                        </div>
+                        <div class="col-sm-7 text-secondary">
+                          <img src="images/pdf.png" alt="" />
+                          <a href="#"> xyz_file.pdf </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="top_remove">2024 Avaada Group . All Rights Reserved.</footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade hidemodal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Financial Rating
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <p>
+                  Please rate your experience in each of the following areas:
+                </p>
+                <p style="margin-top: -20px">
+                  Drag the slider to a point on the scale.
+                </p>
+              </div>
+              <div
+                class="vendor_status_main_rating justify-content-between ms-auto"
+              >
+                <div class="row bs-wizard">
+                  <div class="col-xs-2 bs-wizard-step complete">
+                    <div class="progress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <a href="#" class="bs-wizard-rating"> </a>
+                    <div class="bs-wizard-info text-center">1-Poor</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">
+                      2-Below Average
+                    </div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">3-Average</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">4-Good</div>
+                  </div>
+
+                  <div class="col-xs-2 bs-wizard-step disabled">
+                    <!-- active -->
+
+                    <div class="progress"><div class="progress-bar"></div></div>
+                    <a href="#" class="bs-wizard-dots"></a>
+                    <div class="bs-wizard-info text-center">5-Excellent</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Newvendor_category">
+                <label class="mb-1 text-dark"
+                  >Feedback/Remarks <span class="required">*</span></label
+                >
+                <input type="Username" class="form-control form_h_modal" />
+              </div>
+              <div class="approve_button justify-content-end mt-3">
+                <a href="#" class="btn btn-success" onclick="showSuccessModal()"
+                  >Approve</a
+                >
+
+                <a href="#" class="btn btn-warning">Hold</a>
+                <a href="#" class="btn btn-danger">Reject</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Success Modal -->
+    <div class="successmodal">
+      <div
+        class="modal vendor_modal"
+        id="successModal"
+        role="dialog"
+        aria-labelledby="successModalLabel"
+        aria-hidden="true"
+        style="z-index: 9999999"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close close-btn"></button>
+            </div>
+            <div class="modal-body_lets">
+              <img src="images/check-circle.png" alt="" />
+              <h5 class="modal-title" id="successModalLabel">
+                Financial Evaluation Approved Successfully
+              </h5>
+              <button type="button" class="btn btn-sucess done_btn">
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hold Modal -->
+    <div
+      class="modal vendor_modal hidemodal"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="images/hold.png" alt="" /><br />
+
+            Financial Evaluation has been kept on Hold for now.<br />
+
+            <a type="button" class="btn btn-success save_next_btn">Done </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rejected Modal -->
+    <div
+      class="modal vendor1_modal hidemodal"
+      id="contactModalvendor"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="images/Rejected.png" alt="" /><br />
+
+            Profile has been Reject for now<br />
+
+            <a type="button" class="btn btn-success save_next_btn">Done </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+      function showSuccessModal() {
+        // Hide the contact modal
+        $("#contactModal").modal("hide");
+        $(".hidemodal").hide();
+
+        // Show the success modal
+        $("#successModal").modal("show");
+
+        $(".close-btn").click(function () {
+          $(".successmodal").hide();
+          $("#successModal").modal({
+            backdrop: false,
+          });
+          location.reload(true);
+        });
+      }
+    </script>
+  </body>
+</html>
