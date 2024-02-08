@@ -21,63 +21,63 @@
           <div class="col-md-5 ms-auto invites_log1">
             <div class="invites"></div>
 
-            
-
             <div class="notification">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bell-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+                  />
+                </svg>
 
-              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="circle">3</div>
+              </a>
 
-                 
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-              class="bi bi-bell-fill" viewBox="0 0 16 16">
-              <path
-                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
-          </svg>
+              <div class="dropdown">
+                <div class="notifications dropdown-menu">
+                  <div class="notifications_heading justify-content-between">
+                    Notifications
 
-          <div class="circle">3</div>
+                    <span>2 New</span>
+                  </div>
 
-                  
-                  </a>
-
-                      <div class="dropdown">
-                          
-                        
-
-
-                          <div class="notifications dropdown-menu">
-
-                              <div class="notifications_heading justify-content-between">
-                                  Notifications
-                          
-                                  <span>2 New</span>
-                          </div>
-                          
-                          
-                          
-                          <div class="notifications_inside">
-                          <ul>
-                          <li><a href="#">New vendor details submitted: Vendor Code VND205</a>
-                          <div class="time_outer"><img src="images/time.png" alt=""> 30 Min Ago	</div>
-                          </li>
-                          
-                          <li><a href="#">Vendor details received: Vendor Code VND203, Name - MechCorp Engineering.</a>
-                              <div class="time_outer"><img src="images/time.png" alt=""> 47 Min Ago	</div>
-                              </li>
-                          
-                            
-                          
-                          </ul>
-                          
-                          </div>
-                          
-                          
-                          </div>
-
-
-                         
+                  <div class="notifications_inside">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          >New vendor details submitted: Vendor Code VND205</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 30 Min Ago
                         </div>
+                      </li>
 
-</div>
+                      <li>
+                        <a href="#"
+                          >Vendor details received: Vendor Code VND203, Name -
+                          MechCorp Engineering.</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 47 Min Ago
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="user_box">
               <img src="images/profile_pic.png" alt="" />
@@ -524,13 +524,19 @@
                 <label class="mb-1 text-dark"
                   >Feedback/Remarks <span class="required">*</span></label
                 >
-                <input type="Username" class="form-control form_h_modal" />
+                <input
+                  type="text"
+                  id="feedbackInput"
+                  class="form-control form_h_modal"
+                  placeholder="Enter your feedback or remarks"
+                  required
+                />
+                <div class="error-message" id="feedbackError"></div>
               </div>
               <div class="approve_button justify-content-end mt-3">
-                <a href="#" class="btn btn-success" onclick="showSuccessModal()"
+                <a href="#" class="btn btn-success" onclick="validateFeedback()"
                   >Approve</a
                 >
-
                 <a href="#" class="btn btn-warning">Hold</a>
                 <a href="#" class="btn btn-danger">Reject</a>
               </div>
@@ -649,6 +655,23 @@
           });
           location.reload(true);
         });
+      }
+    </script>
+    <script>
+      function validateFeedback() {
+        var feedbackInput = document.getElementById("feedbackInput");
+        var feedbackError = document.getElementById("feedbackError");
+
+        feedbackError.textContent = "";
+
+        if (!feedbackInput.checkValidity()) {
+          feedbackError.textContent = "Please enter your feedback or remarks.";
+        }
+
+        if (feedbackInput.checkValidity()) {
+          // If validation passes, you can perform further actions
+          showSuccessModal();
+        }
       }
     </script>
   </body>

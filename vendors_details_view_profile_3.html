@@ -564,16 +564,30 @@
                 </div>
                 <div class="lets_select_sme">
                   <label class="mb-1 text-dark">
-                    Email <span class="required">*</span></label
-                  >
-                  <input type="Username" class="form-control form_h_modal" />
+                    Email <span class="required">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="emailInput"
+                    class="form-control form_h_modal"
+                    placeholder="Enter Email"
+                    required
+                  />
+                  <div class="error-message" id="emailError"></div>
                 </div>
               </div>
               <div class="Newvendor_category">
-                <label class="mb-1 text-dark"
-                  >Remarks <span class="required">*</span></label
-                >
-                <input type="Username" class="form-control form_h_modal" />
+                <label class="mb-1 text-dark">
+                  Remarks <span class="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="remarksInput"
+                  class="form-control form_h_modal"
+                  placeholder="Enter your remarks"
+                  required
+                />
+                <div class="error-message" id="remarksError"></div>
               </div>
               <div class="clear_btn_status">
                 <button
@@ -583,14 +597,13 @@
                 >
                   Clear
                 </button>
-                <a
-                  href="factory-visit-checklist.html"
+                <button
                   type="button"
                   class="btn btn-success save_next_btn"
-                  onclick="showSuccessModal()"
+                  onclick="validateForm()"
                 >
                   Submit
-                </a>
+                </button>
               </div>
             </form>
           </div>
@@ -705,6 +718,42 @@
           });
           location.reload(true);
         });
+      }
+    </script>
+    <script>
+      function validateForm() {
+        var emailInput = document.getElementById("emailInput");
+        var remarksInput = document.getElementById("remarksInput");
+
+        var emailError = document.getElementById("emailError");
+        var remarksError = document.getElementById("remarksError");
+
+        // Reset previous error messages
+        emailError.textContent = "";
+        remarksError.textContent = "";
+
+        // Validation logic for email
+        if (!emailInput.checkValidity()) {
+          emailError.textContent = "Please enter a valid email address.";
+        }
+
+        // Validation logic for remarks
+        if (!remarksInput.checkValidity()) {
+          remarksError.textContent = "Please enter your remarks.";
+        }
+
+        // If all validations pass, you can submit the form or perform further actions
+        if (emailInput.checkValidity() && remarksInput.checkValidity()) {
+          // Your submission logic or other actions
+          window.location.href = "factory-visit-checklist.html";
+          console.log(
+            "Form is valid. Email:",
+            emailInput.value,
+            "Remarks:",
+            remarksInput.value
+          );
+          showSuccessModal();
+        }
       }
     </script>
   </body>

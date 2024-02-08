@@ -437,6 +437,10 @@ header {
 .notifications .dropdown-menu {
   border: none !important;
 }
+.remark_btn_factory {
+  text-decoration: none;
+  color: white;
+}
 
 .notifications_heading {
   background: #274594;
