@@ -138,102 +138,143 @@
             </div>
 
             <!-- Contact Modal -->
-            <div
-              class="modal vendor_modal hidemodal"
-              id="contactModal"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="contactModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">
-                      Create Vendor Onboarding
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="lets_modal_vendor">
-                        <div class="lets_select_sme">
-                          <label class="mb-1 text-dark"
-                            >Contact Name <span class="required">*</span></label
-                          >
-                          <input
-                            type="Username"
-                            class="form-control form_h_modal"
-                          />
+            <div class="form-container">
+              <div
+                class="modal vendor_modal hidemodal"
+                id="contactModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="contactModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="contactModalLabel">
+                        Create Vendor Onboarding
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="vendorForm">
+                        <div class="lets_modal_vendor">
+                          <div class="lets_select_sme">
+                            <label class="mb-1 text-dark"
+                              >Contact Name
+                              <span class="required">*</span></label
+                            >
+                            <input
+                              type="text"
+                              id="contactName"
+                              class="form-control form_h_modal"
+                              required
+                            />
+                            <div
+                              class="error-message"
+                              id="contactNameError"
+                            ></div>
+                          </div>
+                          <div class="lets_select_sme">
+                            <label class="mb-1 text-dark"
+                              >Contact Number
+                              <span class="required">*</span></label
+                            >
+                            <input
+                              type="tel"
+                              id="contactNumber"
+                              minlength="10"
+                              maxlength="10"
+                              class="form-control form_h_modal"
+                              placeholder="Enter Mobile Number"
+                              pattern="[0-9]{10}"
+                              title="Please enter a valid 10-digit mobile number"
+                              required
+                            />
+                            <div
+                              class="error-message"
+                              id="contactNumberError"
+                            ></div>
+                          </div>
                         </div>
-                        <div class="lets_select_sme">
+                        <div class="lets_modal_vendor">
+                          <div class="lets_select_sme">
+                            <label class="mb-1 text-dark"
+                              >Vendor Name
+                              <span class="required">*</span></label
+                            >
+                            <input
+                              type="text"
+                              id="vendorName"
+                              class="form-control form_h_modal"
+                              required
+                            />
+                            <div
+                              class="error-message"
+                              id="vendorNameError"
+                            ></div>
+                          </div>
+                          <div class="lets_select_sme">
+                            <label class="mb-1 text-dark"
+                              >Vendor Email
+                              <span class="required">*</span></label
+                            >
+                            <input
+                              type="email"
+                              id="vendorEmail"
+                              class="form-control form_h_modal"
+                              required
+                            />
+                            <div
+                              class="error-message"
+                              id="vendorEmailError"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="Newvendor_category">
                           <label class="mb-1 text-dark"
-                            >Contact Number
+                            >Onboarding Type
                             <span class="required">*</span></label
                           >
-                          <input
-                            type="Username"
-                            class="form-control form_h_modal"
-                          />
-                        </div>
-                      </div>
-                      <div class="lets_modal_vendor">
-                        <div class="lets_select_sme">
-                          <label class="mb-1 text-dark"
-                            >Vendor Name <span class="required">*</span></label
-                          >
-                          <input
-                            type="Username"
-                            class="form-control form_h_modal"
-                          />
-                        </div>
-                        <div class="lets_select_sme">
-                          <label class="mb-1 text-dark"
-                            >Vendor Email <span class="required">*</span></label
-                          >
-                          <input
-                            type="Username"
-                            class="form-control form_h_modal"
-                          />
-                        </div>
-                      </div>
-                      <div class="Newvendor_category">
-                        <label class="mb-1 text-dark"
-                          >Onboarding Type
-                          <span class="required">*</span></label
-                        >
 
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Regular Onboarding</option>
-                          <option value="1">Direct Onboarding</option>
-                          <option value="2">Onboarding without Document</option>
-                        </select>
-                      </div>
-                      <div class="clear_btn_status">
-                        <button
-                          type="button"
-                          class="btn clear_btn"
-                          data-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-success save_next_btn"
-                          onclick="showSuccessModal()"
-                        >
-                          Submit
-                        </button>
-                      </div>
-                    </form>
+                          <select
+                            id="onboardingType"
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Regular Onboarding</option>
+                            <option value="1">Direct Onboarding</option>
+                            <option value="2">
+                              Onboarding without Document
+                            </option>
+                          </select>
+                          <div
+                            class="error-message"
+                            id="onboardingTypeError"
+                          ></div>
+                        </div>
+                        <div class="clear_btn_status">
+                          <button
+                            type="button"
+                            class="btn clear_btn"
+                            data-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-success save_next_btn"
+                            onclick="validateForm()"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -335,21 +376,66 @@
                 <thead>
                   <tr>
                     <th><input type="checkbox" /></th>
-                    <th class="vendor_tabel">Vendor ID</th>
-                    <th class="vendor_tabel">Vendor Name</th>
-                    <th class="vendor_tabel">Registration Date</th>
-                    <th class="vendor_tabel">Category</th>
-                    <th class="vendor_tabel">Contact Person</th>
-                    <th class="vendor_tabel">Contact Number</th>
-                    <th class="vendor_tabel">Email Address</th>
-                    <th class="vendor_tabel">State</th>
-                    <th class="vendor_tabel">Profile Evaluation</th>
-                    <th class="vendor_tabel">Financial Evaluation</th>
-                    <th class="vendor_tabel">Factory Visit</th>
-                    <th class="vendor_tabel">Compliance Check</th>
-                    <th class="vendor_tabel">Final Rating</th>
-                    <th class="vendor_tabel">Final Status</th>
-                    <th class="vendor_tabel">Actions</th>
+                    <th class="vendor_tabel">
+                      Vendor ID
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+
+                    <th class="vendor_tabel">
+                      Vendor Name
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Registration Date
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Category
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Contact Person
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Contact Number
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Email Address
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      State <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Profile Evaluation
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Financial Evaluation
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Factory Visit
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Compliance Check
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Final Rating
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Final Status
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
+                    <th class="vendor_tabel">
+                      Actions
+                      <img src="images/ascending_descending.jpg" alt="" />
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -734,6 +820,67 @@
           });
           location.reload(true);
         });
+      }
+    </script>
+    <script>
+      function validateForm() {
+        var contactName = document.getElementById("contactName");
+        var contactNumber = document.getElementById("contactNumber");
+        var vendorName = document.getElementById("vendorName");
+        var vendorEmail = document.getElementById("vendorEmail");
+        var onboardingType = document.getElementById("onboardingType");
+
+        var contactNameError = document.getElementById("contactNameError");
+        var contactNumberError = document.getElementById("contactNumberError");
+        var vendorNameError = document.getElementById("vendorNameError");
+        var vendorEmailError = document.getElementById("vendorEmailError");
+        var onboardingTypeError = document.getElementById(
+          "onboardingTypeError"
+        );
+
+        // Reset previous error messages
+        contactNameError.textContent = "";
+        contactNumberError.textContent = "";
+        vendorNameError.textContent = "";
+        vendorEmailError.textContent = "";
+        onboardingTypeError.textContent = "";
+
+        // Validation logic
+        if (!contactName.checkValidity()) {
+          contactNameError.textContent = "Please enter the contact name.";
+        }
+
+        if (!contactNumber.checkValidity()) {
+          contactNumberError.textContent =
+            "Please enter a valid 10-digit mobile number.";
+        }
+
+        if (!vendorName.checkValidity()) {
+          vendorNameError.textContent = "Please enter the vendor name.";
+        }
+
+        if (!vendorEmail.checkValidity()) {
+          vendorEmailError.textContent = "Please enter a valid email address.";
+        }
+
+        if (!onboardingType.checkValidity()) {
+          onboardingTypeError.textContent =
+            "Please select the onboarding type.";
+        }
+
+        // You can add additional validation logic here
+
+        // If all validations pass, you can submit the form or perform further actions
+        if (
+          contactName.checkValidity() &&
+          contactNumber.checkValidity() &&
+          vendorName.checkValidity() &&
+          vendorEmail.checkValidity() &&
+          onboardingType.checkValidity()
+        ) {
+          // Submit the form or perform other actions
+          showSuccessModal();
+        }
       }
     </script>
   </body>

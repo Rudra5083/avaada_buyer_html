@@ -44,10 +44,9 @@ footer {
   padding: 8px 26px;
 }
 
-
 .clear_btn {
   background-color: #fff;
-  border: #CDD4D9 solid 1px;
+  border: #cdd4d9 solid 1px;
   color: #000;
   font-size: 14px;
   border-radius: 50px;
@@ -56,8 +55,8 @@ footer {
 }
 
 .clear_btn:hover {
-  background-color: #CDD4D9;
-  border: #CDD4D9 solid 1px;
+  background-color: #cdd4d9;
+  border: #cdd4d9 solid 1px;
   color: #000;
   font-size: 14px;
   border-radius: 50px;
@@ -102,7 +101,9 @@ hr {
   background: #4f9433;
 }
 
-a.green_clr{ color: #4f9433 !important;}
+a.green_clr {
+  color: #4f9433 !important;
+}
 
 a.green {
   background: #4f9433 !important;
@@ -954,8 +955,6 @@ tbody tr:nth-child(odd) {
 
 /* vendors details view profile start */
 
-
-
 .date_download {
   display: flex;
 }
@@ -974,7 +973,9 @@ tbody tr:nth-child(odd) {
   color: #000;
 }
 
-.bar_wt{width: 44% !important;}
+.bar_wt {
+  width: 44% !important;
+}
 
 .download_btn .dropdown-menu a {
   background: none !important;
@@ -1306,6 +1307,11 @@ a.view_submit_done {
 .clear_btn_status {
   padding-top: 10px;
 }
+.error-message {
+  font-style: italic;
+  font-size: 10px;
+  color: red;
+}
 /* New Vendors */
 
 /* Factory Popup */
@@ -1348,7 +1354,6 @@ a.view_submit_done {
 }
 
 .toggle-checkbox:checked + .toggle-switch {
-
   background-color: red;
 }
 
@@ -1362,8 +1367,6 @@ a.view_submit_done {
 }
 
 /* Factory Popup */
-
-
 
 /* Financial Rating Popup */
 .bs-wizard > .bs-wizard-step > .bs-wizard-dots {
@@ -1408,9 +1411,6 @@ a.view_submit_done {
 
 /* Financial Rating Popup */
 
-
-
-
 /* Status Onboarding */
 .maine_received_box {
   color: #5c5a5a;
@@ -1436,21 +1436,28 @@ a.view_submit_done {
   width: 28%;
 }
 
-.party_in{ display: flex;}
+.party_in {
+  display: flex;
+}
 
+.party_in {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
 
+.des_bx {
+  width: 200px;
+  font-size: 12px;
+}
 
-.party_in{font-size: 13px; font-weight: 500;  margin-bottom: 5px;}
+.status_bx a {
+  color: orange;
+  font-size: 12px;
+  text-decoration: none;
+}
 
-.des_bx{ width: 200px; font-size: 12px;}
-
-.status_bx a{  color:orange; font-size: 12px; text-decoration: none;}
-
-
- 
 /* Status Onboarding */
-
-
 
 /* Status_progress_onboarding */
 .inpending_txt {
@@ -1462,7 +1469,7 @@ a.view_submit_done {
 .approve-btn1 {
   border-radius: 4px;
   background: #d9d9d9;
- 
+
   margin: 7px;
   padding: 4px 12px;
 }
@@ -1478,9 +1485,8 @@ a.view_submit_done {
   align-items: center;
   justify-content: center;
 }
- 
-/* Status_progress_onboarding */
 
+/* Status_progress_onboarding */
 
 /* Status_validation_complete */
 .validation_sap {
@@ -1504,7 +1510,6 @@ a.view_submit_done {
   margin: 10px;
 }
 
-
 .form-controlee {
   display: block;
   /* width: 100%; */
@@ -1522,7 +1527,7 @@ a.view_submit_done {
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
- 
+
 .onboarding_status_validation {
   display: flex;
   align-items: center;
@@ -1536,7 +1541,7 @@ a.view_submit_done {
 .maine .bs-wizard-dot {
   top: 21px !important;
 }
- 
+
 .approve-btn_reject_vendor {
   border: #dee2e6;
   padding: 6px 7px;
@@ -1557,25 +1562,6 @@ a.view_submit_done {
   font-size: 18px;
 }
 /* Status_validation_complete */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 599px) {
   .one_div {
