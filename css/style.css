@@ -1316,6 +1316,11 @@ a.view_submit_done {
   font-size: 10px;
   color: red;
 }
+.error {
+  font-style: italic;
+  font-size: 10px;
+  color: red;
+}
 /* New Vendors */
 
 /* Factory Popup */

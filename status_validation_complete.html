@@ -221,19 +221,16 @@
             <div class="approve-btn_reject_vendor">
              
       
-                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Approve </button>
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="validateAndApprove()">Approve</button>
+
                 <button type="button" class="btn btn-light">Hold</button>
                 <button type="button" class="btn btn-light">Reject</button>
             
             </div>
             <div class="maine_remarks_input">
-                <label class="mb-1 text-dark"
-                  >Remarks <span class="required">*</span></label
-                >
-                <input
-                  type="Username"
-                  class="remarks_input form-controlee"
-                />
+              <label class="mb-1 text-dark">Remarks <span class="required">*</span></label>
+              <input type="text" id="remarksInput" class="remarks_input form-controlee" />
+              <span id="remarksError" class="error"></span>
               </div>
     </div>
     
@@ -309,6 +306,49 @@
 
    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      function validateAndApprove() {
+          if (validateRemarks()) {
+              // If validation passes, you can proceed with the approval logic
+              ("Remarks validated. Proceeding with approval.");
+              // Add your approval logic here, e.g., triggering the modal
+          }
+      }
+  
+      function validateRemarks() {
+          var remarksInput = document.getElementById("remarksInput").value.trim();
+          var remarksError = document.getElementById("remarksError");
+  
+          // Reset error and remove invalid-input class
+          remarksError.textContent = "";
+          document.getElementById("remarksInput").classList.remove("invalid-input");
+  
+          // Check if Remarks is empty
+          if (remarksInput === "") {
+              remarksError.textContent = "Please enter the remarks.";
+              document.getElementById("remarksInput").classList.add("invalid-input");
+              return false;
+          }
+  
+          // Additional validation checks can be added here
+  
+          // If validation passes, clear the form
+          clearForm("remarksInput", "remarksError");
+          return true;
+      }
+  
+      function clearForm(inputId, errorId) {
+          // Add logic to clear the form fields if needed
+          document.getElementById(inputId).value = "";
+          document.getElementById(errorId).textContent = "";
+          document.getElementById(inputId).classList.remove("invalid-input");
+      }
+  </script>
+
+
+
+
 </body>
 
 </html>
